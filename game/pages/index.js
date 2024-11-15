@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const optionsDiv = document.getElementById("options");
   const buttons = optionsDiv.querySelectorAll("div h1"); // Select only h1 elements within div
-  logout()
+  if (sessionStorage.getItem("isLoggedIn") !== "true") {
+    logout()
+  }
+
   const nav = (path) => window.location.href = path;
 
   let selected = 1;
@@ -58,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("levels", 0);
     localStorage.setItem("score", 0);
     localStorage.setItem("totalScore", 0);
+    sessionStorage.setItem("isLoggedIn", false)
 
   }
 

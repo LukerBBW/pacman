@@ -3,8 +3,8 @@ const username = localStorage.getItem("username");
 const optionsDiv = document.getElementById("gameOver");
 const buttons = optionsDiv.querySelectorAll("div h2");
 let totalscore = 0;
-const gameOverSound = new Audio("../../sounds/gameOver.wav");
-const gameWinSound = new Audio("../../sounds/gameWin.wav")
+const gameOverSound = new Audio("/sounds/gameOver.wav");
+const gameWinSound = new Audio("/sounds/gameWin.wav")
 
 
 let user;
@@ -14,7 +14,7 @@ let selected = 1;
 const pic = document.getElementById("pic")
 pic.setAttribute("src", localStorage.getItem("imgPath"))
 
-if (localStorage.getItem("imgPath") === "../../images/winnerEnd.png") {
+if (localStorage.getItem("imgPath") === "/images/winnerEnd.png") {
     //play win sound
     gameWinSound.play()
 } else {
@@ -71,9 +71,9 @@ const inputHandler = (key) => {
     } else if (key === "Enter" || key === " " || key === "e" || key === "r") {
         // Überprüfen, welche Option ausgewählt wurde
         if (selected === 1) {
-            window.location.href = "index.html";
+            window.location.href = "/game/index.html";
         } else if (selected === 2) {
-            window.location.href = "../home.html";
+            window.location.href = "/";
         }
     }
     // Nach der Verarbeitung des Tastendrucks aktualisiere den Style der ausgewählten Option

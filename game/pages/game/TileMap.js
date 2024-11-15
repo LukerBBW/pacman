@@ -1,6 +1,6 @@
-import Pacman from "game/pages/game/Pacman.js"
-import MovingDirection from "game/pages/game/MovingDirection.js";
-import Enemy from "game/pages/game/Enemy.js"
+import Pacman from "./Pacman.js"
+import MovingDirection from "./MovingDirection.js";
+import Enemy from "./Enemy.js"
 
 export default class TileMap {
     constructor(tileSize, level) {
@@ -8,52 +8,52 @@ export default class TileMap {
         this.tileSize = tileSize;
 
         this.yellowDot = new Image();
-        this.yellowDot.src = "../../images/yellowDot.png";
+        this.yellowDot.src = "/images/yellowDot.png";
 
         this.wall = new Image();
-        this.wall.src = "../../images/bricks.png";
+        this.wall.src = "/images/bricks.png";
 
         this.level = level;
 
         this.wallUp = new Image();
-        this.wallUp.src = "../../images/wallUp.png";
+        this.wallUp.src = "/images/wallUp.png";
 
         this.wallSide = new Image();
-        this.wallSide.src = "../../images/wallSide.png";
+        this.wallSide.src = "/images/wallSide.png";
 
         this.wallRightUp = new Image();
-        this.wallRightUp.src = "../../images/wallRightUp.png";
+        this.wallRightUp.src = "/images/wallRightUp.png";
 
         this.wallRight = new Image();
-        this.wallRight.src = "../../images/wallRight.png";
+        this.wallRight.src = "/images/wallRight.png";
 
         this.wallLeftUp = new Image();
-        this.wallLeftUp.src = "../../images/wallLeftUp.png";
+        this.wallLeftUp.src = "/images/wallLeftUp.png";
 
         this.wallLeft = new Image();
-        this.wallLeft.src = "../../images/wallLeft.png";
+        this.wallLeft.src = "/images/wallLeft.png";
 
         this.wallBackUp = new Image();
-        this.wallBackUp.src = "../../images/wallBackUp.png";
+        this.wallBackUp.src = "/images/wallBackUp.png";
 
         this.wallBackRight = new Image();
-        this.wallBackRight.src = "../../images/wallBackRight.png";
+        this.wallBackRight.src = "/images/wallBackRight.png";
 
         this.wallBackLeft = new Image();
-        this.wallBackLeft.src = "../../images/wallBackLeft.png";
+        this.wallBackLeft.src = "/images/wallBackLeft.png";
 
         this.wallBackDown = new Image();
-        this.wallBackDown.src = "../../images/wallBackDown.png"
+        this.wallBackDown.src = "/images/wallBackDown.png"
 
         this.wallLeftDownRight = new Image();
-        this.wallLeftDownRight.src = "../../images/wallLeftDownRight.png"
+        this.wallLeftDownRight.src = "/images/wallLeftDownRight.png"
 
         this.wallBlock = new Image();
-        this.wallBlock.src = "../../images/wallBlock.png"
+        this.wallBlock.src = "/images/wallBlock.png"
 
 
         this.pinkDot = new Image();
-        this.pinkDot.src = "../../images/pinkDot.png"
+        this.pinkDot.src = "/images/pinkDot.png"
 
         this.powerDot = this.pinkDot;
         this.powerDotAnimationTimerDefault = 30;
@@ -62,16 +62,16 @@ export default class TileMap {
         this.score = -10;
 
         this.redGhost = new Image();
-        this.redGhost.src = "../../images/redGhost.png"
+        this.redGhost.src = "/images/redGhost.png"
 
         this.blueGhost = new Image();
-        this.blueGhost.src = "../../images/orangeGhost.png"
+        this.blueGhost.src = "/images/orangeGhost.png"
 
         this.pinkGhost = new Image();
-        this.pinkGhost.src = "../../images/pinkGhost.png"
+        this.pinkGhost.src = "/images/pinkGhost.png"
 
         this.turkisGhost = new Image();
-        this.turkisGhost.src = "../../images/blueGhost.png"
+        this.turkisGhost.src = "/images/blueGhost.png"
     }
 
     // 0 - dot

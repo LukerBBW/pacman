@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("levels", 0);
         localStorage.setItem("skinId", 1)
         localStorage.setItem("totalScore", 0)
+        sessionStorage.setItem("isLoggedIn", true)
         //Nächster User pushen
 
         existingData.push({"username": username, "score": 0});

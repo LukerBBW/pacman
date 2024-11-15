@@ -1,4 +1,4 @@
-import MovingDirection from "game/pages/game/MovingDirection.js";
+import MovingDirection from "./MovingDirection.js";
 
 export default class Enemy {
     constructor(x, y, tileSize, velocity, tileMap, imageCount) {
@@ -81,16 +81,16 @@ export default class Enemy {
 
     #loadImages() {
         this.blueGhost = new Image();
-        this.blueGhost.src = "../../images/orangeGhost.png"
+        this.blueGhost.src = "/images/orangeGhost.png"
 
         this.turkisGhost = new Image();
-        this.turkisGhost.src = "../../images/blueGhost.png"
+        this.turkisGhost.src = "/images/blueGhost.png"
 
         this.pinkGhost = new Image();
-        this.pinkGhost.src = "../../images/pinkGhost.png"
+        this.pinkGhost.src = "/images/pinkGhost.png"
 
         this.redGhost = new Image();
-        this.redGhost.src = "../../images/redGhost.png"
+        this.redGhost.src = "/images/redGhost.png"
 
         this.ghosts.push(this.blueGhost)
         this.ghosts.push(this.turkisGhost)
@@ -99,10 +99,10 @@ export default class Enemy {
 
 
         this.scaredGhost = new Image();
-        this.scaredGhost.src = "../../images/scaredGhost.png"
+        this.scaredGhost.src = "/images/scaredGhost.png"
 
         this.scaredGhost2 = new Image();
-        this.scaredGhost2.src = "../../images/scaredGhost2.png"
+        this.scaredGhost2.src = "/images/scaredGhost2.png"
 
     }
 

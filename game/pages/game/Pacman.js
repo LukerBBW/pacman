@@ -1,4 +1,4 @@
-import MovingDirection from "game/pages/game/MovingDirection.js";
+import MovingDirection from "/game/MovingDirection.js";
 
 export default class Pacman {
     constructor(x, y, tileSize, velocity, tileMap) {
@@ -23,9 +23,9 @@ export default class Pacman {
 
         this.madeFirstMove = false;
 
-        this.wakaSound = new Audio("../../sounds/waka.wav")
-        this.powerDotSound = new Audio("../../sounds/power_dot.wav")
-        this.eatGhostSound = new Audio("../../sounds/eat_ghost.wav")
+        this.wakaSound = new Audio("/sounds/waka.wav")
+        this.powerDotSound = new Audio("/sounds/power_dot.wav")
+        this.eatGhostSound = new Audio("/sounds/eat_ghost.wav")
 
         this.powerDotActive = false;
         this.powerDotAboutToExpire = false;
@@ -83,16 +83,16 @@ export default class Pacman {
     #loadPacmanImages() {
        const id= localStorage.getItem("skinId")
         const pacmanImage1 = new Image();
-                pacmanImage1.src = "../../images/skins/pacmanSkin"+id+"_0.png"
+                pacmanImage1.src = "/images/skins/pacmanSkin"+id+"_0.png"
 
                 const pacmanImage2 = new Image();
-                pacmanImage2.src = "../../images/skins/pacmanSkin"+id+"_1.png"
+                pacmanImage2.src = "/images/skins/pacmanSkin"+id+"_1.png"
 
                 const pacmanImage3 = new Image();
-                pacmanImage3.src = "../../images/skins/pacmanSkin"+id+"_2.png"
+                pacmanImage3.src = "/images/skins/pacmanSkin"+id+"_2.png"
 
                 const pacmanImage4 = new Image();
-                pacmanImage4.src ="../../images/skins/pacmanSkin"+id+"_1.png"
+                pacmanImage4.src ="/images/skins/pacmanSkin"+id+"_1.png"
                 this.pacmanImages = [pacmanImage1, pacmanImage2, pacmanImage3, pacmanImage4];
 
 

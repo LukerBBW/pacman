@@ -6,7 +6,7 @@ services:
     image: nginx:alpine3.18
     ports:
       - "8080:80"
-#    volumes:
-#      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-#      - ./game/:/usr/share/nginx/html/pacman:ro
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./game/:/usr/share/nginx/html/pacman:ro
     restart: always

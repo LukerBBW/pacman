@@ -1,5 +1,5 @@
-const lockClosedURL = "../images/lockClosed.png";
-const lockOpenURL = "../images/lockOpen.png";
+const lockClosedURL = "/images/lockClosed.png";
+const lockOpenURL = "/images/lockOpen.png";
 
 let l1unlocked = true;
 let l2unlocked = false;
