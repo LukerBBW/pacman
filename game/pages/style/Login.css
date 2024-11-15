@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+}
+
+
+.keyboard {
+    width: 50vw;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr); /* 6 Spalten im Grid */
+    gap: 10px; /* Abstand zwischen den Elementen */
+    justify-items: center; /* Horizontal zentrierte Elemente */
+    align-items: center; /* Vertikal zentrierte Elemente */
+}
+
+#keyboard div {
+    width: 60px; /* Breite der einzelnen Tasten */
+    height: 60px; /* Höhe der einzelnen Tasten */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray; /* Hintergrundfarbe der Tasten */
+    border-radius: 5px; /* Runde Ecken */
+}
+
+#selectedName {
+    margin-top: 20vh;
+    width: 50vw;
+
+}
+#selectedName h2{
+    width: 50vw;
+}
+#desc{
+    width: 40vw;
+}
+
+.row {
+    margin-right: 5vw;
+}
+
+#GameContent {
+    width: 50vw;
+}
+
+
+.selected {
+    color: yellow;
+}
+
+.selected-text {
+    color: yellow;
+}

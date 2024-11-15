@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+#gameCanvas {
+    box-shadow: 10px 10px 20px yellow;
+}
+
+#titleImage{
+    height: 20vh;
+    width: 30vw;
+}
+div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+body {
+
+    overflow: hidden;
+    height: 100vh;
+    background: black;
+}
+h1{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
