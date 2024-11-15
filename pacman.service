@@ -3,6 +3,7 @@ Description=Pacman Autostart
 After=docker.service
 StartLimitIntervalSec=0
 [Service]
+User=pacman
 Environment=DISPLAY=:0
 Type=simple
 Restart=on-failure
