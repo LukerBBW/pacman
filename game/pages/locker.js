@@ -99,7 +99,7 @@ function selectionHandler() {
     if (selectedRow === 4) {
         localStorage.setItem("skinId", 1);
     } else if (selectedRow === 5) {
-        window.location.href = "home.html";
+        window.location.href = "/";
     } else {
         if (selectedRow === 1) {
             localStorage.setItem("skinId", selectedCol + 1);

@@ -167,7 +167,7 @@ function selectionHandler() {
             window.location.href = "game/index.html";
         }
     } else {
-       window.location.href="home.html"
+       window.location.href="/"
     }
 }
 

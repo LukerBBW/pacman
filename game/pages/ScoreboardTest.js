@@ -40,7 +40,7 @@ const detectKeyDown = (e) => {
 
 const inputHandler = (key) => {
     if (key === "Enter"||key===" "||key==="e"||key==="r") {
-        window.location.href = "home.html";
+        window.location.href = "/home";
     }
 };
 document.addEventListener("keydown", detectKeyDown, true);
